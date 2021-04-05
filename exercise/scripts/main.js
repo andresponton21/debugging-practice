@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function() {
       // If we have selected two cards, see if they match.
       if (selectedCards.length === 2) {
         var card1 = selectedCards[0];
-        var card2 = selectedCards[0];
+        var card2 = selectedCards[1];
         console.log(selectedCards)
 
         // If the cards match, add them to the collection of matched cards and
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', function() {
       }
 
       // If we've matched all the cards, display a message.
-      if (matchedCards.length > cards.length) {
+      if (matchedCards.length === cards.length) {
         alert('You matched all the cards, nice job!');
       }
     });
