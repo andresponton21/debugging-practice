@@ -52,9 +52,12 @@ window.addEventListener('DOMContentLoaded', function() {
       
 
       // If we've matched all the cards, display a message.
+     setTimeout(function(){
       if (matchedCards.length === cards.length) {
         alert('You matched all the cards, nice job!');
       }
+
+     }) 
     });
   });
 
