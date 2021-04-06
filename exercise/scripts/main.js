@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function() {
       if (selectedCards.length === 2) {
         var card1 = selectedCards[0];
         var card2 = selectedCards[1];
-        console.log(selectedCards.length)
+        //console.log(selectedCards.length)
        // console.log(card1, card2)
 
         // If the cards match, add them to the collection of matched cards and
@@ -66,8 +66,9 @@ window.addEventListener('DOMContentLoaded', function() {
   // - #green
   // - #orange
   // - #red
-  var deckElement = document.querySelector('.Cards');
-  var deckColor = window.location.hashh;
+  var deckElement = document.querySelector('.cards');
+  var deckColor = window.location.hash;
+  deckColor = deckColor.substring(1);
 
   if (deckElement && deckColor) {
     var className = 'cards--' + deckColor;
